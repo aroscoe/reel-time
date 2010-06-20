@@ -1,0 +1,9 @@
+/* SCREEN **************************************************/
+
+p {
+    margin-bottom: 14px;
+}
+#page_container {
+    margin: 0 auto;
+    width: 580px;
+}

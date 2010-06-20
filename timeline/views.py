@@ -1,8 +1,8 @@
-from django.shortcuts import render_to_response
+from django.views.generic.simple import direct_to_template
 
 from timeline.models import Movie
 
 def movies(request):
     movies = Movie.objects.all()
-    return render_to_response('base.html', {'movies': movies})
+    return direct_to_template(request, 'base.html', {'movies': movies})
         
