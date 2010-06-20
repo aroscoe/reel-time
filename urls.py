@@ -7,9 +7,8 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Example:
-    # (r'^reeltime/', include('reeltime.foo.urls')),
-
+    url(r'^$', 'timeline.views.movies', name="home"),
+    # url(r'^timeline/', include('timeline.urls'), name="timeline"),
     (r'^admin/', include(admin.site.urls)),
 )
 
