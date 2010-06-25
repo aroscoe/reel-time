@@ -2,7 +2,7 @@ from django.db import models
 
 class Movie(models.Model):
     name = models.CharField(max_length=150)
-    watched = models.DateField()
+    date_watched = models.DateField()
     location = models.ForeignKey('Location')
     
     def __unicode__(self):
