@@ -19,7 +19,7 @@
     <div id="page_container">
     {% for movie in movies %}
         {% ifchanged %}<h1>{{ movie.date_watched|date:"F" }}</h1>{% endifchanged %}
-        <p>{{movie.name}} - {{movie.date_watched}}</p>
+        <p>{{movie.date_watched|date:"d/Y"}} - {{movie.name}}</p>
     {% endfor %}
     </div>
 </body>
