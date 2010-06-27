@@ -8,6 +8,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', 'timeline.views.movies', name="home"),
+    url(r'^(?P<year>\d+)/?$', 'timeline.views.movies', name="timeline_movies"),
     # url(r'^timeline/', include('timeline.urls'), name="timeline"),
     (r'^admin/', include(admin.site.urls)),
 )
